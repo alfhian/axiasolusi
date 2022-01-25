@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@300&display=swap');
+
+html {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	padding-right: 0 !important;
+	margin: 0;
+	height: 100%;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.mt-6 {
+    margin-top: 4rem;
+}
+
+.mt-7 {
+    margin-top: 5rem;
+}
+
+.mt-8 {
+	margin-top: 6rem;
+}
+
+.mt-9 {
+	margin-top: 10rem;
+}
+
+.mt-10 {
+	margin-top: 15rem;
+}
+
+.mt-11 {
+	margin-top: 20rem;
+}
+
+.login-left {
+	width: 30%;
+}
+
+.login-right {
+	width: 70%;
+}
+
+.font-outfit {
+	font-family: 'Outfit', sans-serif;
+}
+
+.font-roboto {
+	font-family: 'Roboto', sans-serif;
+}
+
+.login-title {
+	font-size: 45px;
+	letter-spacing: 1px;
+	color: #106C37;
+}
+
+::placeholder {
+	color: darkgray;
+	opacity: 0.8;
+}
+
+.label-gagal-login {
+	font-family: 'Arial', sans-serif;
+	font-style: italic;
+	color: red;
+}
+
+input[type="text"], input[type="password"], textarea, input[type="number"], input[type="date"] {
+	font-size: 12px !important;
+	border-radius: 0 !important;
+	border: none !important;
+	border-bottom: solid 1px green !important;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(126, 239, 104, 0.8);
+  box-shadow: none;
+  outline: 0 none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid green;
+  -webkit-box-shadow: 0 0 0px;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.green-button {
+	background-color: #75ab2e !important;
+	color: white !important;
+	font-size: 12px !important;
+	border: none !important;
+	transition: all 0.5s ease !important;
+}
+
+.green-button:hover {
+	background-color: #abe647 !important;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+}
+
+/*----Main Page----*/
+
+.content-container {
+	width: 80%;
+	background-color: #f2fafc;
+}
+
+.navigasi-container {
+	height: 90vh;
+}
+
+.navigasi-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.navigasi-container::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+.navigasi-container::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+.navigasi-container::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.username {
+	font-family: 'Poppins', sans-serif;
+	font-size: 11px;
+	color: gray;
+}
+
+.user-container>tbody>tr>td {
+	padding: 0px 0.5rem;
+}
+
+.user-container>tbody>tr>td>img {
+	cursor: pointer;
+}
+
+.user-container>tbody>tr>td>i {
+	color: gray;
+	cursor: pointer;
+}
+
+
+
+/*----NAVIGASI----*/
+
+.sidebar-container {
+	width: 20%;
+	background-color: white;
+}
+
+.navigasi {
+	font-family: 'Poppins', sans-serif;
+	font-size: 13px;
+	color: #a7ada1;
+	list-style-type: none;
+}
+
+.parent, .parent-sub, .sub {
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.navigasi li a {
+	color: #a7ada1;
+}
+
+.sub>i, .sub>span {
+	color: #a7ada1;
+}
+
+.parent:hover, .parent-sub:hover, .sub:hover, .sub:hover>i, .sub:hover>span {
+	font-weight: bold;
+	color: #5d8c00;
+	background-color: #e2edcc;
+}
+
+.menu-icon {
+	width: 2.5rem;
+	text-align: center;
+}
+
+.child {
+	display: none;
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+	color: #a7ada1;
+	list-style-type: none;
+}
+
+.sub>i {
+	font-size: 5px;
+}
+
+.active {
+	background-color: #62783a;
+	color: white;
+}
+
+.navigasi-mobile {
+	position: fixed;
+	margin-top: -1000px;
+	width: 19%;
+	min-width: 200px;
+	height: 89.8%;
+	background-color: #333333;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 0.5px;
+	color: #b3b3b3;
+	overflow-y: auto;
+	opacity: 0;
+	z-index: 10;
+	transition: all 1s ease;
+}
+
+.navigasi-mobile::-webkit-scrollbar {
+  width: 8px;
+}
+
+.navigasi-mobile::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+
+.toggle-navigasi {
+	font-weight: bold;
+	z-index: 10;
+}
+
+#left {
+	position: absolute;
+	top: 2%;
+	right: 5%;
+	cursor: pointer;
+}
+
+#right {
+	display: none;
+	position: absolute;
+	top: 2%;
+	right: 10%;
+	cursor: pointer;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+
+/*----DASHBOARD----*/
+
+.notification-container {
+	font-family: 'Poppins', sans-serif;
+	font-size: 13px;
+	color: gray;
+}
+
+.chart-medium {
+	width: 13rem;
+}
+
+.small-icon {
+	font-size: 9px;
+}
+
+
+
+
+
+/*----FOOTER----*/
+
+footer {
+	clear: both;
+	position: relative;
+	width: 100%;
+	height: 4%;
+	background-color: #d9d9d9;
+	transition: 0.5s ease;
+}
+
+footer>div {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	font-family: 'Arial', sans-serif;
+	font-size: 11px;
+	color: #4d4d4d;
+	transform: translateY(-50%);
+}
